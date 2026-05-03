@@ -1,0 +1,79 @@
+body {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background: #f9f9f9 url('images/market-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+  color: #222;
+}
+
+.dark {
+  background: #121212 url('images/market-bg-dark.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #00e5ff;
+}
+
+  
+  .top-bar button, .menu button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #00796b;
+    border-radius: 10px;
+    background: rgba(224, 247, 250, 0.9); /* হালকা স্বচ্ছ ব্যাকগ্রাউন্ড */
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  button {
+    background: #0288d1;
+    color: white;
+  }
+  
+  button:hover {
+    background: #01579b;
+  }
+  
+  #marketList p, #calcList p {
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+  }
+  
+  .calc-box {
+    margin-top: 15px;
+    padding: 10px;
+    background: #fff3e0;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+  }
+  

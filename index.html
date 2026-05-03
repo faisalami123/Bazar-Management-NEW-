@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>বাজার ম্যানেজমেন্ট</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <!-- শুধু আইকন রাখা হলো -->
+    <button onclick="toggleLanguage()" id="langBtn">🌐</button>
+    <button onclick="toggleDarkMode()" id="darkBtn">🌙</button>
+  </div>
+
+  <h1 id="title">🛒 বাজার ম্যানেজমেন্ট</h1>
+
+  <div class="menu">
+    <button id="menuMarketBtn" onclick="showSection('market')">🛒 বাজারের হিসাব</button>
+    <button id="menuCalcBtn" onclick="showSection('calculator')">🧮 ক্যালকুলেটর</button>
+  </div>
+
+  <!-- বাজারের হিসাব -->
+  <div id="marketSection" class="section hidden">
+    <h2 id="marketTitle">🛒 বাজারের হিসাব</h2>
+    <input type="text" id="itemName" placeholder="জিনিসের নাম">
+    <input type="number" id="pricePerKg" placeholder="প্রতি কেজি দাম">
+    <input type="number" id="weight" placeholder="ওজন (গ্রাম)">
+    <button onclick="addMarketItem()" id="addMarketBtn">➕ সংযুক্ত করুন</button>
+    <button onclick="clearMarket()" id="clearMarketBtn">🗑️ সব মুছুন</button>
+    <div id="marketList"></div>
+    <div class="calc-box">
+      <h3 id="marketTotalLabel">মোট খরচ: <span id="marketTotal">0</span> টাকা</h3>
+    </div>
+  </div>
+
+  <!-- দোকানের ক্যালকুলেটর -->
+  <div id="calcSection" class="section hidden">
+    <h2 id="calcTitle">🧮  লিস্ট ক্যালকুলেটর</h2>
+    <input type="text" id="calcItem" placeholder="জিনিসের নাম">
+    <input type="number" id="calcPrice" placeholder="দাম (টাকা)">
+    <button onclick="addCalcItem()" id="addCalcBtn">➕ যোগ করুন</button>
+    <button onclick="clearCalc()" id="clearCalcBtn">🗑️ সব মুছুন</button>
+    <div id="calcList"></div>
+    <div class="calc-box">
+      <h3 id="calcTotalLabel">মোট যোগফল: <span id="calcTotal">0</span> টাকা</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
